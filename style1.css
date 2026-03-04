@@ -1,0 +1,349 @@
+@import url(https://fonts.google.com/);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: georgia;
+}
+
+
+body {
+    background-image: url("bg3.jpg");
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+}
+
+
+.navbar {
+    background: linear-gradient(90deg, #0c70d4, white);
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.nav-icons i {
+    font-size: 22px;
+    margin: 0 20px;
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    gap: 10px;
+    color: black;
+    padding: 30px;
+}
+
+
+.nav-icons i:hover {
+    color: #1E90ff;
+}
+
+.profile-card {
+    background: linear-gradient(180deg,  #0c70d4, white);
+    padding: 30px;
+    border-radius: 20px;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    box-shadow: 0 4px 10px cyan;;
+}
+
+.profile-card h2 {
+    margin-bottom: 15px;
+   
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #1e90ff;
+    margin: 0 auto 10px auto;
+    object-fit: cover;
+}
+
+.change-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px auto 20px auto;
+    transition: 0.3s;
+}
+
+.change-photo:hover {
+    background-color: #0077e6;
+}
+
+.profile-card label {
+    font-weight: bold;
+    font-size: 13px;
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.profile-card input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.profile-card .btn-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.profile-card button {
+    padding: 8px 20px;
+    border: none;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #1e90ff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-container{
+    padding-left: 40px
+}
+
+
+.profile-card button:hover {
+    background-color: #1e90ff;
+}
+
+.title {
+    font-family: lobster;
+    font-style: italic;
+    color: black;
+    font-size: 55px;
+    margin: 0;
+    height: 240px;
+    display:flex;
+}
+
+.title1 {
+    width: 100%;
+    text-align: left;
+    padding-left: 100px;
+
+}
+
+.photo {
+    position: absolute;
+    right: 20px;
+    top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+    
+
+.top-img {
+    width: 300px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px cyan;
+    transition: transform 0.3s ease;
+}
+
+.bottom-row {
+    display: flex;
+    gap: 10px;  
+}
+
+.bottom-img {
+    width: 300px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px cyan;
+    transition: transform 0.3s ease;
+}
+
+.top-img:hover,
+.bottom-img:hover {
+    transform: scale(1.1);
+}
+
+.buy-now { 
+    display: inline-block;
+    background: linear-gradient(90deg,  #0c70d4, white);
+    padding: 0.3em 1em; 
+    text-decoration: none;
+    font-size: 1.0em; 
+    font-family: georgia;
+    border: 0.15em solid black;
+    border-radius: 2em; 
+    color: black;
+    transition: 0.3s;
+    margin-top: 20px;
+
+}
+
+.contacts-container-right{
+    background: linear-gradient(180deg,  #0c70d4, white);
+    border-radius: 20px;
+    width: 360px;
+    height: 372px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px cyan;
+    transition: transform 0.3s ease;
+ }
+
+ .map{
+    width: 80%;
+    margin-top: 20px;
+ }
+
+.contacts-container-left{
+    background: linear-gradient(180deg,  #0c70d4, white);
+    border-radius: 20px;
+    text-align: center;
+    width: 360px;
+    padding: 20px;
+    box-shadow: 0 4px 10px cyan;
+    transition: transform 0.3s ease;
+ }
+ 
+.contact-wrapper {
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.contacts-container-right button {
+    margin-top: 9px;
+    padding: 10px 25px;
+    align-self: center; 
+    background-color: #0c70d4;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contacts-container-right form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.contacts-container-right input,
+.contacts-container-right textarea {
+    background: white;
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    font-size: 15px;
+    color: black;
+}
+
+.contacts-container-right textarea {
+    height: 90px;
+    resize: none;
+}
+
+.contacts-container-right:hover,
+.contacts-container-left:hover {
+    transform: scale(1.1); 
+}
+
+.profile-info{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.notif-container{
+    background: linear-gradient(180deg,  #0c70d4, white);
+    border-radius: 20px;
+    width: 300px;
+    height: 460px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px cyan;
+    transition: transform 0.3s ease;
+    
+ }
+
+ .notif-img{
+    width: 150px;
+    float: left;
+    margin-right: 10px
+ }
+
+.order-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+.order-form input[type="text"] {
+    color: black !important;
+    opacity: 1 !important;
+    -webkit-text-fill-color: black;
+
+    border: none;
+    border-bottom: 1.5px solid black;  
+    background: transparent;
+    outline: none;
+
+    padding: 2px 0;     
+    font-size: 14px;
+    text-align: left;
+    width: 100%;
+
+    pointer-events: none; 
+    text-align: center;
+}
+
+
+.h_orders{
+    font-family: courier;
+    font-size: 16px;
+    text-align: left;
+}
+
+.h2_orders{
+    font-family: georgia;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+

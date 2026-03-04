@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: georgia;
+}
+
+
+body {
+    background-image: url("bg3.jpg");
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+}
+
+
+.navbar {
+    background: linear-gradient(90deg, #0c70d4, white);
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.nav-icons i {
+    font-size: 22px;
+    margin: 0 20px;
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    gap: 10px;
+    color: black;
+    padding: 30px;
+}
+
+
+.nav-icons i:hover {
+    color: #1E90ff;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    position: relative;
+    background: linear-gradient(180deg,  #0c70d4, white);
+    border-radius: 20px;
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 10px cyan;
+}
+
+
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.product-card .price {
+    background-color: #1E9ff0;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn1{
+    background-color: #1E90FF;
+    text-decoration: none;
+    border: #1E90ff;
+    font-weight: bold;
+}
+
+.img1{
+     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.card {
+  position: relative;
+    background: linear-gradient(180deg,  #0c70d4, white);
+    border-radius: 20px;
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 10px cyan;
+}
+
+.card h2 {
+  color: #1e90ff;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.image-box {
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.image-box img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.image-box p {
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.input1 {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button2 {
+  margin-top: 10px;
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 20px;
+  background: #1e90ff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0077e6;
+}
+
+.note {
+  font-size: 10px;
+  margin-top: 10px;
+  color: #333;
+  text-align: justify;
+}
+
+.homep{
+    text-align: center;
+    font-size: 20px;
+}
+.note{
+    font-family: 'Courier New';
+    font-size: 12px;
+}
+
+.notif-container{
+    background: linear-gradient(180deg,  #0c70d4, white);
+    border-radius: 20px;
+    width: 360px;
+    height: 372px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px cyan;
+    transition: transform 0.3s ease;
+ }

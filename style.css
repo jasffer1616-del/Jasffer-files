@@ -1,65 +1,37 @@
-body{
+@import url(https://fonts.google.com/);
+
+.index{
+    background-image: url("bg3.jpg");
+    background-size: 100%;
     margin:0;
-    background-color: black;
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-    
-}
-
-.nav1{
-    text-align:end;
-     padding-top: 20px;
-     text-decoration: none;
-     margin: 15px;
-
-}
-
-.nav1 a:hover{
-    text-decoration: underline;
-}
-
-a{
-    
-    padding-left: 15px;
-    font-size: 18px;
-    color: red;
-    text-decoration: none;
-   
-}
-
-.adjust{
-    padding-right: 80px;
-}
-
-.hero{
-    display: flex;
-    align-items: center;
+    height:100vh;
+    display:flex;
     justify-content: center;
-    gap: 80px;
-    padding: 50px 15%;
-    padding-top: 5%;
+    align-items:center;
+    text-align: center;
 }
 
-.hero-text{
-    max-width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.index1{
+   
+    font-family:orbitron;
+    color: white;
+    font-size: 50px;
+    font-weight:bold;
+    text-align: center;
+    margin: 0;
+    height: 220px;
+    display:flex;
+
 }
 
-.index_h2{
-    font-size: 40px;
-    padding: 0;
-    margin-left: 0%; 
-
-}
-.index_img{
-    width: 25%;
-    margin-right: 5%;
-    border-radius: 40%;
-    box-shadow: 0 4px 10px red;
+.index2{
+    width:550px;
+    height: 463.23px;
+    margin: auto;
+    display: block;
+    align-items: right;
+    padding-right: 5%;
     animation: float 4s ease-in-out infinite;
-
 }
 
 @keyframes float {
@@ -75,111 +47,250 @@ a{
 }
 
 
-.name {
-    color: red;
-    white-space: nowrap;
-    overflow: hidden;           
-    border-right: 3px solid red;
-    display: inline-block; 
-    width: 0;   
-    animation: typing 5s steps(18) forwards, blink 0.7s step-end infinite alternate;
-}
-
-@keyframes typing {
-    from { width: 0; }
-    to { width: 18ch; } 
-}
-
-
-@keyframes blink {
-    50% { border-color: transparent; }
-}
-.index_p{
-    text-align: justify;
-     font-size: 18px;
-    font-style: italic; 
-}
-
-
-.social-icons{
-    margin: 0.1px 0 15px 0; 
-}
-
-
-.social-icons i{
-    font-size: 24px;
-    margin-right: 15px;
-    color: red;
-    cursor: pointer;
-}
-
-.about_container{
-    display: flex;
-    align-items: center; 
-    gap: 30px; 
-    padding: 20px;
-    margin-left: 15%;
-    margin-top: 4%;
-}
-
-.index_img1{
-    width: 15%;
-    border-radius: 35%;
-    box-shadow: 0 4px 10px red;
-    animation: float 4s ease-in-out infinite;
-}
-
-.p_about{
-    font-size: 18px;
-    max-width: 40%;
-    margin-bottom: 10%;
-    margin-left: 5%;
-    color: black;
-    background: linear-gradient(40deg,  white, red);
-    border-radius: 10%;
-    transition: transform 0.3s ease, backdrop-filter 0.3s ease;
-    backdrop-filter: blur(0px);
+.index3{
+    text-align:center;
+    padding-left:23%;
     
 }
 
-@keyframes float {
-    0% { transform: translateY(0px) scale(1); }
-    50% { transform: translateY(-15px) scale(1); }
-    100% { transform: translateY(0px) scale(1); }
+.indexsign{ 
+
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px;
+  border: 2px solid white;
+  padding: 8px 20px;
+  border-radius: 50px;
+  
+}
+    
+.indexsign:hover{
+  background-color: white;
+  color: #1e90ff;
 }
 
-.p_about:hover,
-.p_about:active{
-    transform: scale(1.1);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Georgia', sans-serif;
 }
 
-.skills-container{
-    display: flex;
-    justify-content: center;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("bg3.jpg");
+  background-size: 100%;
+}
+
+.signincontainer {
+  width: 800px;
+  height: 450px;
+  display: flex;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+
+.signinleft {
+  flex: 1;
+  background: linear-gradient(to bottom right,  #1E90FF);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.signinleft button {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.signinleft button:hover {
+  background: white;
+  color:  #1E90FF;
+}
+
+
+.signinright {
+  flex: 1;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.signinright h2 {
+  color:  #1E90FF;
+  margin-bottom: 20px;
+}
+
+.signinright form{
+    display:flex;
+    flex-direction: column;
     align-items: center;
-    gap: 20px;
-    padding-top: 5%;
-    flex-wrap: wrap;
 }
 
-.skills-box{
-    background: linear-gradient(135deg, white, red);
-    color: black;
-    width: 140px;
-    padding: 20px;
-    border-radius: 18px;
-    text-align: center;
-    font-weight: 600;
-    letter-spacing: 1px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+.signinfield {
+  width: 100%;
+  margin: 10px 0;
 }
 
-.skills-box:hover{
-    transform: translateY(-8px) scale(1.05);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+.signinfield input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid  #1E90FF;
+  border-radius: 25px;
+  outline: none;
+  text-align: center;
 }
+
+.signina {
+  display: block;
+  margin: 5px 0;
+  text-decoration: none;
+  font-size: 20px;
+  color:  #1E90FF;
+}
+
+.login-btn {
+  
+  background:  #1E90FF;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 8px;
+  
+  
+}
+
+.login-btn:hover {
+  background:  #1E90FF;
+}
+
+
+
+.signupcontainer {
+  display: flex;
+  width: 800px;
+  height: 450px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.signupform-container {
+  flex: 1;
+  padding: 50px;
+  background-color: #fff;
+}
+
+.signupform-container h2 {
+  color:  #1E90FF;
+  margin-bottom: 20px;
+}
+
+.signupinput-group {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.signupinput-group i {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #333;
+}
+
+.signupinput-group input {
+  width: 100%;
+  padding: 10px 40px;
+  border: none;
+  background-color:  skyblue;
+  border-radius: 25px;
+  outline: none;
+  color: #000;
+}
+
+.signuptoggle {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.signupbtn {
+  width: 100%;
+  background-color:  #1E90FF;
+  border: none;
+  color: white;
+  padding: 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.signupside-container {
+  flex: 1;
+  background-color:  #1E90FF;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.signupside-container h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.signupside-container p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.signupbtn-outline {
+  background:  #1E90FF;
+  color: white;
+  color: white;
+  border: 2px solid #fff;
+  margin: 5px 0px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 20px;
+  font-size: 15px;
+}
+
+.signupbtn-outline:hover {
+  background-color:  white;
+  color: #1E90FF;
+}
+
 
